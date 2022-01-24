@@ -3,12 +3,6 @@ import numpy as np
 import time
 
 print("""
-
-Harry :  Hey !! Would you like to try my invisibility cloak ??
-
-         Its awesome !!
-
-        
          Prepare to get invisible .....................
     """)
 
@@ -24,7 +18,7 @@ background = np.flip(background,axis=1)
 while(cap.isOpened()):
 	ret, img = cap.read()
 	
-	# Flipping the image (Can be uncommented if needed)
+	# Flipping the image 
 	img = np.flip(img,axis=1)
 	
 	# Converting image to HSV color space.
